@@ -3,6 +3,7 @@ body {
   background-color: #C0C0B6;
   margin-left: 15px;
   background-repeat: no-repeat;
+  max width: 1400px;
 }
 
 table, th, tr, td {
@@ -16,13 +17,15 @@ table {
     background-color: rgba(0,0,0,0.65);
     position: absolute;
     height: 100px;
-    width: 1400px;
+    width: 1300px;
     font-family: courier new;
     color: #FFF;
-    top: 300px;
+    top: 339px;
     text-align: center;
     max-width: 1400px;
     table-layout: fixed;
+    margin-left:2%;
+    margin-right:5%;
 }
 
 tr {
@@ -31,6 +34,7 @@ tr {
 
 td {
     padding: 15px;
+    font-size: 100%;
 }
 
 h1 {
@@ -40,7 +44,7 @@ h1 {
   width: 1400px;
   font-family: courier new;
   color: #FFF;
-  bottom: 600px;
+  bottom: 630px;
   text-align: center;
   padding-top: 10px;
 }
@@ -52,7 +56,7 @@ h2 {
   width: 1400px;
   font-family: courier new;
   color: #FFF;
-  bottom: 550px;
+  bottom: 580px;
   text-align: center;
   font-size: 200%;
 }
@@ -64,7 +68,7 @@ h2 {
   width: 1400px;
   font-family: courier new;
   color: #FFF;
-  bottom: 503px;
+  bottom: 533px;
   text-align: center;
   padding-top: 10px;
 }
@@ -76,7 +80,19 @@ h2 {
   width: 1400px;
   font-family: courier new;
   color: #FFF;
-  bottom: 448px;
+  bottom: 423px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#thirdH3 {
+  background-color: rgba(0,0,0,0.65);
+  position: absolute;
+  height: 45px;
+  width: 1400px;
+  font-family: courier new;
+  color: #FFF;
+  bottom: 478px;
   text-align: center;
   padding-top: 10px;
 }
