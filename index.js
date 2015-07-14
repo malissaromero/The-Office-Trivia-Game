@@ -89,7 +89,7 @@ $("#third500").on("click", function(){
 })
 
 $("#fourth500").on("click", function(){
-  $(this).text("").fadeIn(2000);
+  $(this).text("What was the big check made out to in the Fun Run episode? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "fourfive")
     $(this).after(input);
@@ -98,7 +98,7 @@ $("#fourth500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#fourfive").val();
-    if (userInput === "") {
+    if (userInput === "science") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -189,7 +189,7 @@ $("#second400").on("click", function(){
 })
 
 $("#third400").on("click", function(){
-  $(this).text("").fadeIn(2000);
+  $(this).text("What does Jim use to increase the weight of Dwight's phone then apruptly decreases the weight causing Dwight to smack himself in the face? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "threefour")
     $(this).after(input);
@@ -198,7 +198,7 @@ $("#third400").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#threefour").val();
-    if (userInput === "") {
+    if (userInput === "nickles") {
       score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -337,7 +337,7 @@ $("#threethree").keypress(function(e) {
 })
 
 $("#fourth300").on("click", function(){
-  $(this).text("Where does Jim transfer after telling Pam how he feels about her?").fadeIn(2000);
+  $(this).text("Where does Jim transfer after telling Pam how he feels about her? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "fourthree")
     $(this).after(input);
@@ -461,7 +461,7 @@ $("#threetwo").keypress(function(e) {
 })
 
 $("#fourth200").on("click", function(){
-  $(this).text("").fadeIn(2000);
+  $(this).text("What is Michaels movie called that the whole office participated in? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "fourtwo")
     $(this).after(input);
@@ -470,7 +470,7 @@ $("#fourtwo").keypress(function(e) {
   if (e.which == 13) {
     e.preventDefault();
   var userInput = $("#fourtwo").val();
-  if (userInput === "bears, beets, battlestar gallatica") {
+  if (userInput === "threat level midnight") {
     score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
