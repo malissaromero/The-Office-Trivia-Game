@@ -1,6 +1,16 @@
 $(document).ready(function(){
 
 var runningScore = 0;
+var answer = {
+  els: {
+    answerCorrect1: ("That is correct! You have won 100 points."),
+    answerCorrect2: ("That is correct! You have won 200 points."),
+    answerCorrect3: ("That is correct! You have won 300 points."),
+    answerCorrect4: ("That is correct! You have won 400 points."),
+    answerCorrect5: ("That is correct! You have won 500 points."),
+    answerIncorrect: ("That is incorrect. You are a loo-hahoooo-zer!")
+    }
+  }
 
 //////////////////////////////////////////////////
 //500 Questions
@@ -13,18 +23,18 @@ $("#first500").on("click", function(){
     $(this).after(input);
 
   $("#onefive").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#onefive").val();
     if (userInput === "daffy duck") {
-      var score = 500;
+      score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect5);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -37,18 +47,18 @@ $("#second500").on("click", function(){
     $(this).after(input);
 
   $("#twofive").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#twofive").val();
     if (userInput === "nick figgaro") {
-      var score = 500;
+      score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect5);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -61,18 +71,18 @@ $("#third500").on("click", function(){
     $(this).after(input);
 
   $("#threefive").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#threefive").val();
     if (userInput === "pam") {
-      var score = 500;
+      score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect5);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -85,18 +95,18 @@ $("#fourth500").on("click", function(){
     $(this).after(input);
 
   $("#fourfive").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#fourfive").val();
     if (userInput === "") {
-      var score = 500;
+      score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect5);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerCorrect5);
     }
     }
   })
@@ -109,18 +119,18 @@ $("#fifth500").on("click", function(){
     $(this).after(input);
 
   $("#fivefive").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#fivefive").val();
     if (userInput === "irrigation america nighttime") {
-      var score = 500;
+      score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect5);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -137,18 +147,18 @@ $("#first400").on("click", function(){
     $(this).after(input);
 
   $("#onefour").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#onefour").val();
     if (userInput === "foliage") {
-      var score = 400;
+      score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect4);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -161,18 +171,18 @@ $("#second400").on("click", function(){
     $(this).after(input);
 
   $("#twofour").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#twofour").val();
     if (userInput === "cecilia phillip") {
-      var score = 400;
+      score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect4);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerCorrect4);
     }
     }
   })
@@ -185,18 +195,18 @@ $("#third400").on("click", function(){
     $(this).after(input);
 
   $("#threefour").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#threefour").val();
     if (userInput === "") {
-      var score = 400;
+      score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect4);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -209,18 +219,18 @@ $("#fourth400").on("click", function(){
     $(this).after(input);
 
   $("#fourfour").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#fourfour").val();
     if (userInput === "finer things club") {
-      var score = 400;
+      score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect4);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -233,18 +243,18 @@ $("#fifth400").on("click", function(){
     $(this).after(input);
 
   $("#fivefour").keypress(function(e) {
-    if (event.which == 13) {
-      event.preventDefault();
+    if (e.which == 13) {
+      e.preventDefault();
     var userInput = $("#fivefour").val();
     if (userInput === "froggy 101") {
-      var score = 400;
+      score = 400;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is correct! You have won 500 points.");
+        alert(answer.els.answerCorrect4);
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-      alert("That is incorrect. You are a loo-hahoooo-zer!");
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -261,18 +271,18 @@ $("#first300").on("click", function(){
     $(this).after(input);
 
 $("#onethree").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#onethree").val();
   if (userInput === "meryl streep") {
     var score = 300;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect3);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -285,18 +295,18 @@ $("#second300").on("click", function(){
     $(this).after(input);
 
 $("#twothree").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#twothree").val();
   if (userInput === "gil") {
-    var score = 300;
+    score = 300;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect3);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answerIncorrect);
   }
   }
 })
@@ -309,18 +319,18 @@ $("#third300").on("click", function(){
     $(this).after(input);
 
 $("#threethree").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#threethree").val();
   if (userInput === "flonkerton") {
-    var score = 300;
+    score = 300;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect3);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -333,18 +343,18 @@ $("#fourth300").on("click", function(){
     $(this).after(input);
 
 $("#fourthree").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fourthree").val();
   if (userInput === "stanford connecticut") {
-    var score = 300;
+    score = 300;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect3);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -357,18 +367,18 @@ $("#fifth300").on("click", function(){
     $(this).after(input);
 
 $("#fivethree").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fivethree").val();
   if (userInput === "call of duty") {
-    var score = 300;
+    score = 300;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect3);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -385,18 +395,18 @@ $("#first200").on("click", function(){
     $(this).after(input);
 
 $("#onetwo").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#onetwo").val();
   if (userInput === "michael") {
-    var score = 200;
+    score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect2);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerCorrect2);
   }
   }
 })
@@ -409,18 +419,18 @@ $("#second200").on("click", function(){
     $(this).after(input);
 
 $("#twotwo").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#twotwo").val();
   if (userInput === "sprinkles") {
     var score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect2);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -433,18 +443,18 @@ $("#third200").on("click", function(){
     $(this).after(input);
 
 $("#threetwo").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#threetwo").val();
   if (userInput === "bears beets battlestar gallatica") {
-    var score = 200;
+    score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect2);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerCorrect2);
   }
   }
 })
@@ -457,18 +467,18 @@ $("#fourth200").on("click", function(){
     $(this).after(input);
 
 $("#fourtwo").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fourtwo").val();
   if (userInput === "bears, beets, battlestar gallatica") {
-    var score = 200;
+    score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect2);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -481,18 +491,18 @@ $("#fifth200").on("click", function(){
     $(this).after(input);
 
 $("#fivetwo").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fivetwo").val();
   if (userInput === "spicy curry award") {
     var score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect2);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -509,18 +519,18 @@ $("#first100").on("click", function(){
     $(this).after(input);
 
 $("#oneone").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#oneone").val();
   if (userInput === "thats what she said") {
-    var score = 100;
+    score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect1);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -533,18 +543,18 @@ $("#second100").on("click", function(){
     $(this).after(input);
 
 $("#twoone").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#twoone").val();
   if (userInput === "here comes treble") {
-    var score = 100;
+    score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect1);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -557,18 +567,18 @@ $("#third100").on("click", function(){
     $(this).after(input);
 
 $("#threeone").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#threeone").val();
   if (userInput === "chilies") {
     var score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect1);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -581,18 +591,18 @@ $("#fourth100").on("click", function(){
     $(this).after(input);
 
 $("#fourone").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fourone").val();
   if (userInput === "ryan howard") {
-    var score = 100;
+    score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect1);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -605,19 +615,18 @@ $("#fifth100").on("click", function(){
     $(this).after(input);
 
 $("#fiveone").keypress(function(e) {
-  if (event.which == 13) {
-    event.preventDefault();
+  if (e.which == 13) {
+    e.preventDefault();
   var userInput = $("#fiveone").val();
-  console.log(userInput)
   if (userInput === "quality assurance") {
-    var score = 100;
+    score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is correct! You have won 500 points.");
+      alert(answer.els.answerCorrect1);
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-    alert("That is incorrect. You are a loo-hahoooo-zer!");
+      alert(answer.els.answerIncorrect);
   }
   }
 })
