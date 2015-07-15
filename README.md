@@ -10,8 +10,9 @@ User Stories - Bronze Level
 7. The user should be able to see a scoreboard based on the questions that they have answered correctly.
 
 User Stories - Silver Level
-1. The user should be able to see a timer to see how much time they have left to answer a question.
-2. The user should be able to create an account.
-3. The user should be able to view a scoreboard of other users scores.
-4. The user should be able to compete against each other on a high scoreboard.
-5. The user should be able to track scores across games even if the page is reloaded.
+1. The user should be able to refresh the table to start over.
+2. The user should be able to see a timer to see how much time they have left to answer a question.
+3. The user should be able to create an account.
+4. The user should be able to view a scoreboard of other users scores.
+5. The user should be able to compete against each other on a high scoreboard.
+6. The user should be able to track scores across games even if the page is reloaded.
