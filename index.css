@@ -23,7 +23,7 @@ table {
     position: absolute;
     height: 100px;
     width: 1300px;
-    font-family: courier new;
+    font-family: "courier new";
     color: #FFF;
     top: 270px;
     text-align: center;
@@ -48,7 +48,7 @@ h1 {
   position: absolute;
   height: 50px;
   width: 1400px;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   bottom: 630px;
   text-align: center;
@@ -60,7 +60,7 @@ h2 {
   position: absolute;
   height: 44px;
   width: 1400px;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   bottom: 580px;
   text-align: center;
@@ -72,7 +72,7 @@ h2 {
   position: absolute;
   height: 30px;
   width: 1400px;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   bottom: 548px;
   text-align: center;
@@ -84,7 +84,7 @@ h2 {
   position: absolute;
   height: 30px;
   width: 1400px;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   bottom: 468px;
   text-align: center;
@@ -96,7 +96,7 @@ h2 {
   position: absolute;
   height: 30px;
   width: 1400px;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   bottom: 508px;
   text-align: center;
@@ -105,7 +105,7 @@ h2 {
 
 #resetButton {
   position: relative;
-  font-family: courier new;
+  font-family: "courier new";
   color: #FFF;
   background-color: rgba(0,0,0,0.65);
   border: 1px solid black;
