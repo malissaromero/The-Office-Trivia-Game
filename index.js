@@ -12,6 +12,10 @@ var answer = {
     }
   }
 
+$("#resetButton").click(function(){
+  location.reload();
+})
+
 //////////////////////////////////////////////////
 //500 Questions
 /////////////////////////////////////////////////
@@ -21,6 +25,7 @@ $("#first500").on("click", function(){
     var input = $("<input>");
     input.attr("id","onefive")
     $(this).after(input);
+    $("#first500").off("click");
 
   $("#onefive").keypress(function(e) {
     if (e.which == 13) {
@@ -45,6 +50,7 @@ $("#second500").on("click", function(){
     var input = $("<input>");
     input.attr("id", "twofive")
     $(this).after(input);
+    $("#second500").off("click");
 
   $("#twofive").keypress(function(e) {
     if (e.which == 13) {
@@ -69,6 +75,7 @@ $("#third500").on("click", function(){
     var input = $("<input>");
     input.attr("id", "threefive")
     $(this).after(input);
+    $("#third500").off("click");
 
   $("#threefive").keypress(function(e) {
     if (e.which == 13) {
@@ -93,6 +100,7 @@ $("#fourth500").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fourfive")
     $(this).after(input);
+    $("#fourth500").off("click");
 
   $("#fourfive").keypress(function(e) {
     if (e.which == 13) {
@@ -106,7 +114,7 @@ $("#fourth500").on("click", function(){
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-        alert(answer.els.answerCorrect5);
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -117,6 +125,7 @@ $("#fifth500").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fivefive")
     $(this).after(input);
+    $("#fifth500").off("click");
 
   $("#fivefive").keypress(function(e) {
     if (e.which == 13) {
@@ -145,6 +154,7 @@ $("#first400").on("click", function(){
     var input = $("<input>");
     input.attr("id", "onefour")
     $(this).after(input);
+    $("#first400").off("click");
 
   $("#onefour").keypress(function(e) {
     if (e.which == 13) {
@@ -169,6 +179,7 @@ $("#second400").on("click", function(){
     var input = $("<input>");
     input.attr("id", "twofour")
     $(this).after(input);
+    $("#second400").off("click");
 
   $("#twofour").keypress(function(e) {
     if (e.which == 13) {
@@ -182,7 +193,7 @@ $("#second400").on("click", function(){
     }
     else {
       $("#secondH3").text("Scoreboard = " + runningScore)
-        alert(answer.els.answerCorrect4);
+        alert(answer.els.answerIncorrect);
     }
     }
   })
@@ -193,6 +204,7 @@ $("#third400").on("click", function(){
     var input = $("<input>");
     input.attr("id", "threefour")
     $(this).after(input);
+    $("#third400").off("click");
 
   $("#threefour").keypress(function(e) {
     if (e.which == 13) {
@@ -217,6 +229,7 @@ $("#fourth400").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fourfour")
     $(this).after(input);
+    $("#fourth400").off("click");
 
   $("#fourfour").keypress(function(e) {
     if (e.which == 13) {
@@ -241,6 +254,7 @@ $("#fifth400").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fivefour")
     $(this).after(input);
+    $("#fifth400").off("click");
 
   $("#fivefour").keypress(function(e) {
     if (e.which == 13) {
@@ -269,6 +283,7 @@ $("#first300").on("click", function(){
     var input = $("<input>");
     input.attr("id", "onethree")
     $(this).after(input);
+    $("#first300").off("click");
 
 $("#onethree").keypress(function(e) {
   if (e.which == 13) {
@@ -293,6 +308,7 @@ $("#second300").on("click", function(){
     var input = $("<input>");
     input.attr("id", "twothree")
     $(this).after(input);
+    $("#second300").off("click");
 
 $("#twothree").keypress(function(e) {
   if (e.which == 13) {
@@ -306,7 +322,7 @@ $("#twothree").keypress(function(e) {
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-      alert(answerIncorrect);
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -317,6 +333,7 @@ $("#third300").on("click", function(){
     var input = $("<input>");
     input.attr("id", "threethree")
     $(this).after(input);
+    $("#third300").off("click");
 
 $("#threethree").keypress(function(e) {
   if (e.which == 13) {
@@ -341,6 +358,7 @@ $("#fourth300").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fourthree")
     $(this).after(input);
+    $("#fourth300").off("click");
 
 $("#fourthree").keypress(function(e) {
   if (e.which == 13) {
@@ -365,6 +383,7 @@ $("#fifth300").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fivethree")
     $(this).after(input);
+    $("#fifth300").off("click");
 
 $("#fivethree").keypress(function(e) {
   if (e.which == 13) {
@@ -393,6 +412,7 @@ $("#first200").on("click", function(){
     var input = $("<input>");
     input.attr("id", "onetwo")
     $(this).after(input);
+    $("#first200").off("click");
 
 $("#onetwo").keypress(function(e) {
   if (e.which == 13) {
@@ -406,7 +426,7 @@ $("#onetwo").keypress(function(e) {
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-      alert(answer.els.answerCorrect2);
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -417,6 +437,7 @@ $("#second200").on("click", function(){
     var input = $("<input>");
     input.attr("id", "twotwo")
     $(this).after(input);
+    $("#second200").off("click");
 
 $("#twotwo").keypress(function(e) {
   if (e.which == 13) {
@@ -441,6 +462,7 @@ $("#third200").on("click", function(){
     var input = $("<input>");
     input.attr("id", "threetwo")
     $(this).after(input);
+    $("#third200").off("click");
 
 $("#threetwo").keypress(function(e) {
   if (e.which == 13) {
@@ -454,7 +476,7 @@ $("#threetwo").keypress(function(e) {
   }
   else {
     $("#secondH3").text("Scoreboard = " + runningScore)
-      alert(answer.els.answerCorrect2);
+      alert(answer.els.answerIncorrect);
   }
   }
 })
@@ -465,6 +487,7 @@ $("#fourth200").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fourtwo")
     $(this).after(input);
+    $("#fourth200").off("click");
 
 $("#fourtwo").keypress(function(e) {
   if (e.which == 13) {
@@ -489,6 +512,7 @@ $("#fifth200").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fivetwo")
     $(this).after(input);
+    $("#fifth200").off("click");
 
 $("#fivetwo").keypress(function(e) {
   if (e.which == 13) {
@@ -517,6 +541,7 @@ $("#first100").on("click", function(){
     var input = $("<input>");
     input.attr("id", "oneone")
     $(this).after(input);
+    $("#first100").off("click");
 
 $("#oneone").keypress(function(e) {
   if (e.which == 13) {
@@ -541,6 +566,7 @@ $("#second100").on("click", function(){
     var input = $("<input>");
     input.attr("id", "twoone")
     $(this).after(input);
+    $("#second100").off("click");
 
 $("#twoone").keypress(function(e) {
   if (e.which == 13) {
@@ -565,12 +591,13 @@ $("#third100").on("click", function(){
     var input = $("<input>");
     input.attr("id", "threeone")
     $(this).after(input);
+    $("#third100").off("click");
 
 $("#threeone").keypress(function(e) {
   if (e.which == 13) {
     e.preventDefault();
   var userInput = $("#threeone").val();
-  if (userInput === "chilies") {
+  if (userInput === "chilis") {
     var score = 100;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
@@ -589,6 +616,7 @@ $("#fourth100").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fourone")
     $(this).after(input);
+    $("#fourth100").off("click");
 
 $("#fourone").keypress(function(e) {
   if (e.which == 13) {
@@ -613,6 +641,7 @@ $("#fifth100").on("click", function(){
     var input = $("<input>");
     input.attr("id", "fiveone")
     $(this).after(input);
+    $("#fifth100").off("click");
 
 $("#fiveone").keypress(function(e) {
   if (e.which == 13) {
