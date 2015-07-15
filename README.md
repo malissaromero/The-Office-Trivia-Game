@@ -1,5 +1,7 @@
 The Office Trivia Game
 
+Link: http://malissaromero.github.io/The-Office-Trivia-Game/
+
 User Stories - Bronze Level
 1. The user should be able to view a table with trivia categories.
 2. The user should be able to select a category and point value.
