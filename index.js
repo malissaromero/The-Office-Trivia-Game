@@ -250,7 +250,7 @@ $("#fourth400").on("click", function(){
 })
 
 $("#fifth400").on("click", function(){
-  $(this).text("What radio station bumber sticker does Dwight have on his filing cabinet? ").fadeIn(2000);
+  $(this).text("What radio station bumper sticker does Dwight have on his filing cabinet? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "fivefour")
     $(this).after(input);
@@ -304,7 +304,7 @@ $("#onethree").keypress(function(e) {
 })
 
 $("#second300").on("click", function(){
-  $(this).text("What is Oscar's boyfriend's name? ").fadeIn(2000);
+  $(this).text("What is Oscar's first boyfriend's name? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id", "twothree")
     $(this).after(input);
@@ -418,7 +418,7 @@ $("#onetwo").keypress(function(e) {
   if (e.which == 13) {
     e.preventDefault();
   var userInput = $("#onetwo").val();
-  if (userInput === "michael") {
+  if (userInput === "himself") {
     score = 200;
     runningScore = score + runningScore;
     $("#secondH3").text("Scoreboard = " + runningScore)
