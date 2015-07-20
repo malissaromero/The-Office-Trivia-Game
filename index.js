@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 var runningScore = 0;
 var answer = {
+  // mms: Good job extracting your messaging into a single place.  Makes it easy to change.  The name could be a little more obvious (answerMessages).
+  // mms: "els" is usually reserved for a list of page "elements"
+  // mms: do you see the duplication here?
+
   els: {
     answerCorrect1: ("That is correct! You have won 100 points."),
     answerCorrect2: ("That is correct! You have won 200 points."),
@@ -21,6 +25,17 @@ $("#resetButton").click(function(){
 /////////////////////////////////////////////////
 
 $("#first500").on("click", function(){
+  // mms: I would like to see the questions and answers pulled up into a data array
+  // mms: data = [
+  // mms:   { category: "Michael Scott", questions: [
+  // mms:       { question: "What name did Michael...", answer: "daffy duck", score: 500 },
+  // mms:       { question: "What is Michael and...", answer: "foliage", score: 400},
+  // mms: ...
+  // mms: ]
+  // mms: Imaging just looping through that to build your board and set events.
+
+  // mms: Lots of duplication.  This can be a maintenance nightmare.
+  // mms: Kudos to you.  Usually when I see this much duplication, the project is only partially complete because it is sooo hard to make any changes.
   $(this).text("What name did Michael sign on the diversity day pledge? ").fadeIn(2000);
     var input = $("<input>");
     input.attr("id","onefive")
@@ -31,6 +46,7 @@ $("#first500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#onefive").val();
+    // mms: if you used userInput.toLowerCase, then users wouldn't have to
     if (userInput === "daffy duck") {
       score = 500;
       runningScore = score + runningScore;
