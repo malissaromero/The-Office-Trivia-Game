@@ -31,7 +31,7 @@ $("#first500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#onefive").val();
-    if (userInput === "daffy duck") {
+    if (userInput.toUpperCase() === "DAFFY DUCK") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -56,7 +56,7 @@ $("#second500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#twofive").val();
-    if (userInput === "nick figgaro") {
+    if (userInput.toUpperCase() === "NICK FIGGARO") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -81,7 +81,7 @@ $("#third500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#threefive").val();
-    if (userInput === "pam") {
+    if (userInput.toUpperCase() === "PAM") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -106,7 +106,7 @@ $("#fourth500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#fourfive").val();
-    if (userInput === "science") {
+    if (userInput.toUpperCase() === "SCIENCE") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
@@ -131,7 +131,7 @@ $("#fifth500").on("click", function(){
     if (e.which == 13) {
       e.preventDefault();
     var userInput = $("#fivefive").val();
-    if (userInput === "irrigation america nighttime") {
+    if (userInput.toUpperCase() === "IRRIGATION AMERICA NIGHTTIME") {
       score = 500;
       runningScore = score + runningScore;
       $("#secondH3").text("Scoreboard = " + runningScore)
